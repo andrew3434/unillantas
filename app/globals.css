@@ -60,6 +60,20 @@
   }
 }
 
+@keyframes red-glow {
+  0%,
+  100% {
+    box-shadow: 0 10px 30px -10px rgba(227, 6, 19, 0.4);
+  }
+  50% {
+    box-shadow: 0 10px 40px -5px rgba(227, 6, 19, 0.7);
+  }
+}
+
+.animate-red-glow {
+  animation: red-glow 2.5s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

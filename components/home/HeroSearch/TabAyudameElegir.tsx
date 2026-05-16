@@ -79,10 +79,11 @@ const motionProps = {
 };
 
 const cardBase =
-  "rounded-xl border p-5 text-center transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red/40";
+  "relative rounded-xl border p-6 text-center transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red/40 sm:p-8";
 const cardIdle =
-  "border-surface-border bg-surface-elevated text-white hover:border-white/30";
-const cardSelected = "border-brand-red bg-brand-red/10 text-white";
+  "border-surface-border bg-surface-elevated text-white hover:-translate-y-1 hover:border-white/30 hover:shadow-lg hover:shadow-brand-red/10";
+const cardSelected =
+  "border-brand-red bg-brand-red/10 text-white after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-12 after:-translate-x-1/2 after:rounded-full after:bg-brand-red after:content-['']";
 
 export function TabAyudameElegir() {
   const [paso, setPaso] = useState<Paso>(1);
@@ -152,6 +153,7 @@ export function TabAyudameElegir() {
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
               {tipoOpciones.map((o) => {
                 const selected = respuestas.tipoVehiculo === o.id;
+                const isSuv = o.id === "suv";
                 return (
                   <button
                     key={o.id}
@@ -161,8 +163,14 @@ export function TabAyudameElegir() {
                       selected ? cardSelected : cardIdle
                     }`}
                   >
+                    {isSuv && (
+                      <span className="absolute right-2 top-2 rounded-full border border-brand-red/40 bg-brand-red/20 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-brand-red">
+                        Más común
+                      </span>
+                    )}
                     <o.Icon
-                      className={`h-8 w-8 ${
+                      strokeWidth={1.5}
+                      className={`h-12 w-12 ${
                         selected ? "text-brand-red" : "text-white/70"
                       }`}
                       aria-hidden
@@ -222,7 +230,8 @@ export function TabAyudameElegir() {
                     }`}
                   >
                     <o.Icon
-                      className={`h-8 w-8 ${
+                      strokeWidth={1.5}
+                      className={`h-12 w-12 ${
                         selected ? "text-brand-red" : "text-white/70"
                       }`}
                       aria-hidden

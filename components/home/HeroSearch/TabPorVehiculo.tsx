@@ -146,7 +146,9 @@ export function TabPorVehiculo() {
       <button
         type="submit"
         disabled={!parsed}
-        className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-red px-6 py-4 font-display text-base uppercase tracking-wider text-white shadow-lg shadow-brand-red/20 transition-all hover:bg-brand-red-dark hover:shadow-brand-red/40 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-brand-red disabled:hover:shadow-brand-red/20 disabled:active:scale-100"
+        className={`group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-red px-6 py-4 font-display text-base uppercase tracking-wider text-white shadow-lg shadow-brand-red/20 transition-all hover:bg-brand-red-dark hover:shadow-brand-red/40 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-brand-red disabled:hover:shadow-brand-red/20 disabled:active:scale-100 ${
+          parsed ? "animate-red-glow" : ""
+        }`}
       >
         Buscar llantas
         <ArrowRight

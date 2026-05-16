@@ -16,7 +16,7 @@ export function HeroSearch() {
   const [activeTab, setActiveTab] = useState<TabMode>("medida");
 
   return (
-    <div className="mx-auto w-full max-w-3xl rounded-2xl border border-surface-border bg-surface-card p-6 sm:p-8">
+    <div className="mx-auto w-full max-w-3xl rounded-2xl border border-white/15 bg-surface-card p-6 shadow-2xl shadow-black/40 sm:p-8">
       <span className="inline-flex items-center gap-2 rounded-full border border-brand-red/40 bg-brand-red/10 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-white">
         <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
         Encontrá tu llanta ideal
