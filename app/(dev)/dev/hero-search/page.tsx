@@ -40,7 +40,7 @@ export default function HeroSearchDevPage() {
       >
         <motion.div
           variants={itemV}
-          className="mb-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-mono text-xs uppercase tracking-widest text-white/40"
+          className="mb-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-mono text-xs uppercase tracking-widest text-white"
         >
           <span>18 sucursales</span>
           <span aria-hidden className="h-1 w-1 rounded-full bg-brand-red" />
@@ -53,7 +53,7 @@ export default function HeroSearchDevPage() {
           variants={itemV}
           className="mb-10 flex h-64 items-center justify-center rounded-2xl border-2 border-dashed border-white/10"
         >
-          <span className="font-mono text-xs text-white/30">
+          <span className="font-mono text-xs text-white">
             [ HERO IMAGE — 2400×1200 — coming soon ]
           </span>
         </motion.div>

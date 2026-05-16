@@ -47,7 +47,7 @@ function InputCell({
     <div className="flex flex-1 flex-col">
       <label
         htmlFor={`medida-${id}`}
-        className="mb-2 font-mono text-[0.65rem] uppercase tracking-widest text-white/40"
+        className="mb-2 font-mono text-[0.65rem] uppercase tracking-widest text-white"
       >
         {label}
       </label>
@@ -62,7 +62,7 @@ function InputCell({
         maxLength={maxLength}
         placeholder={placeholder}
         aria-invalid={invalid}
-        className={`w-full rounded-lg border bg-surface-elevated px-3 py-4 text-center font-mono text-3xl tracking-wider text-white transition-colors placeholder:text-white/15 focus:outline-none focus:ring-2 focus:ring-brand-red/40 ${
+        className={`w-full rounded-lg border bg-surface-elevated px-3 py-4 text-center font-mono text-3xl tracking-wider text-white transition-colors placeholder:text-white focus:outline-none focus:ring-2 focus:ring-brand-red/40 ${
           invalid
             ? "border-brand-red/60"
             : "border-surface-border focus:border-brand-red/40"
@@ -76,7 +76,7 @@ function Separator({ children }: { children: React.ReactNode }) {
   return (
     <div
       aria-hidden
-      className="flex items-end pb-4 font-mono text-2xl text-white/30"
+      className="flex items-end pb-4 font-mono text-2xl text-white"
     >
       {children}
     </div>

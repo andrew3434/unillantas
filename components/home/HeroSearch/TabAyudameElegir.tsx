@@ -132,7 +132,7 @@ export function TabAyudameElegir() {
     <div>
       {numericPaso !== null && (
         <div className="mb-6">
-          <div className="mb-2 font-mono text-xs uppercase tracking-widest text-white/40">
+          <div className="mb-2 font-mono text-xs uppercase tracking-widest text-white">
             Paso {numericPaso} de 3
           </div>
           <div className="h-1 w-full overflow-hidden rounded-full bg-surface-elevated">
@@ -171,7 +171,7 @@ export function TabAyudameElegir() {
                     <o.Icon
                       strokeWidth={1.5}
                       className={`h-12 w-12 ${
-                        selected ? "text-brand-red" : "text-white/70"
+                        selected ? "text-brand-red" : "text-white"
                       }`}
                       aria-hidden
                     />
@@ -232,7 +232,7 @@ export function TabAyudameElegir() {
                     <o.Icon
                       strokeWidth={1.5}
                       className={`h-12 w-12 ${
-                        selected ? "text-brand-red" : "text-white/70"
+                        selected ? "text-brand-red" : "text-white"
                       }`}
                       aria-hidden
                     />
@@ -296,13 +296,13 @@ export function TabAyudameElegir() {
                     aria-hidden
                   />
                   <div className="min-w-0 flex-1">
-                    <div className="font-mono text-[0.65rem] uppercase tracking-widest text-white/50">
+                    <div className="font-mono text-[0.65rem] uppercase tracking-widest text-white">
                       {r.marca}
                     </div>
                     <div className="font-display text-2xl leading-tight tracking-display text-white">
                       {r.modelo}
                     </div>
-                    <div className="mt-0.5 font-mono text-sm text-white/70">
+                    <div className="mt-0.5 font-mono text-sm text-white">
                       {r.medida} · ${r.precio}
                     </div>
                   </div>
@@ -327,7 +327,7 @@ export function TabAyudameElegir() {
             <button
               type="button"
               onClick={reset}
-              className="mt-3 inline-flex w-full items-center justify-center gap-2 font-mono text-xs uppercase tracking-widest text-white/40 transition-colors hover:text-white/70"
+              className="mt-3 inline-flex w-full items-center justify-center gap-2 font-mono text-xs uppercase tracking-widest text-white transition-colors hover:text-white"
             >
               <RotateCcw className="h-3 w-3" aria-hidden />
               Volver a empezar

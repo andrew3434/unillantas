@@ -35,7 +35,7 @@ function SelectField({
     <div className={`flex flex-col ${disabled ? "opacity-40" : ""}`}>
       <label
         htmlFor={id}
-        className="mb-2 font-mono text-[0.65rem] uppercase tracking-widest text-white/40"
+        className="mb-2 font-mono text-[0.65rem] uppercase tracking-widest text-white"
       >
         {label}
       </label>
@@ -58,7 +58,7 @@ function SelectField({
         </select>
         <ChevronDown
           aria-hidden
-          className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/40"
+          className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white"
         />
       </div>
     </div>
@@ -132,12 +132,12 @@ export function TabPorVehiculo() {
       <div className="mt-5 min-h-[2.25rem]">
         {parsed && (
           <span className="inline-flex items-center gap-2 rounded-md border border-surface-border bg-surface-elevated px-3 py-1.5 font-mono text-sm font-medium text-white">
-            <span className="text-white/40">Llantas:</span>
+            <span className="text-white">Llantas:</span>
             <span className="tracking-wider">{medida}</span>
           </span>
         )}
         {noMatch && (
-          <span className="font-mono text-xs text-white/40">
+          <span className="font-mono text-xs text-white">
             No encontramos esa combinación
           </span>
         )}

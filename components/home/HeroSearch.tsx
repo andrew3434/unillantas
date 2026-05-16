@@ -39,7 +39,7 @@ export function HeroSearch() {
               className={
                 active
                   ? "rounded-full bg-brand-red px-5 py-2 font-display text-base leading-none tracking-display text-white shadow-md shadow-brand-red/20 transition-all"
-                  : "rounded-full border border-surface-border bg-transparent px-5 py-2 font-display text-base leading-none tracking-display text-white/60 transition-all hover:border-white/30 hover:text-white"
+                  : "rounded-full border border-surface-border bg-transparent px-5 py-2 font-display text-base leading-none tracking-display text-white transition-all hover:border-white/30 hover:text-white"
               }
             >
               {t.label}
@@ -54,7 +54,7 @@ export function HeroSearch() {
         {activeTab === "wizard" && <TabAyudameElegir />}
       </div>
 
-      <p className="mt-6 border-t border-surface-border pt-6 font-mono text-xs text-white/40">
+      <p className="mt-6 border-t border-surface-border pt-6 font-mono text-xs text-white">
         🔍 ¿No sabés tu medida? Está en el costado de tu llanta actual.
       </p>
     </div>
