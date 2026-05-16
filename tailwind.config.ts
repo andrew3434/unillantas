@@ -11,15 +11,15 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          red: "#E30613",
-          "red-dark": "#B30510",
-          "red-light": "#FF1F2E",
+          red: "#EC0127",
+          "red-light": "#F42736",
+          "red-dark": "#9A1522",
         },
         surface: {
-          dark: "#0A0A0A",
-          card: "#1A1A1A",
-          elevated: "#242424",
-          border: "#2E2E2E",
+          dark: "#1E1E1E",
+          card: "#2A2A2A",
+          elevated: "#363636",
+          border: "#3A3A3A",
         },
         whatsapp: "#25D366",
       },
