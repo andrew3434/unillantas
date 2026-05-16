@@ -1,0 +1,113 @@
+
+{
+  "hero": {
+    "tituloPrincipal": "TU PRÓXIMO VIAJE EMPIEZA AQUÍ",
+    "subtitulo": "Más de 35 años llevándote a tu destino. Las mejores marcas, el mejor servicio, 18 sucursales en todo El Salvador.",
+    "ctaPrimario": "Buscar mis llantas",
+    "ctaSecundario": "Reservar servicio"
+  },
+  "buscadorInteligente": {
+    "titulo": "ENCUENTRA TU LLANTA IDEAL",
+    "subtitulo": "Buscá por medida o por tu vehículo — te mostramos exactamente lo que necesitás",
+    "tabs": [
+      { "id": "medida", "label": "Por medida", "placeholder": "Ej: 205/55R16" },
+      { "id": "vehiculo", "label": "Por vehículo", "placeholder": "Marca → Modelo → Año" }
+    ]
+  },
+  "bannerReservas": {
+    "titulo": "AGENDÁ TU SERVICIO EN 30 SEGUNDOS",
+    "subtitulo": "Sin filas, sin esperas. Reservá la fecha y hora que te conviene en la sucursal más cercana.",
+    "cta": "Reservar ahora",
+    "beneficios": [
+      "Disponibilidad en tiempo real",
+      "Confirmación inmediata",
+      "Recordatorios por WhatsApp"
+    ]
+  },
+  "servicios": {
+    "titulo": "TODO LO QUE TU AUTO NECESITA",
+    "subtitulo": "Servicio profesional con tecnología de última generación",
+    "items": [
+      {
+        "nombre": "Alineado y Balanceo",
+        "descripcion": "Mayor seguridad, estabilidad y vida útil para tus llantas",
+        "duracion": "45 min",
+        "precioDesde": 25
+      },
+      {
+        "nombre": "Cambio de Aceite",
+        "descripcion": "Aceites premium y filtros originales para máximo rendimiento del motor",
+        "duracion": "30 min",
+        "precioDesde": 35
+      },
+      {
+        "nombre": "Aire Acondicionado",
+        "descripcion": "Diagnóstico, recarga y reparación para máxima comodidad",
+        "duracion": "60 min",
+        "precioDesde": 45
+      },
+      {
+        "nombre": "Diagnóstico de Motor",
+        "descripcion": "Scanner profesional y reparación para que tu motor siempre funcione al 100%",
+        "duracion": "90 min",
+        "precioDesde": 50
+      },
+      {
+        "nombre": "Frenos",
+        "descripcion": "Mantenimiento y reparación para máxima seguridad en cada viaje",
+        "duracion": "60 min",
+        "precioDesde": 40
+      },
+      {
+        "nombre": "Dirección y Suspensión",
+        "descripcion": "Sistema en perfecto estado para un manejo seguro y cómodo",
+        "duracion": "75 min",
+        "precioDesde": 55
+      }
+    ]
+  },
+  "marcas": {
+    "titulo": "DISTRIBUIDORES OFICIALES",
+    "subtitulo": "Distribuidores exclusivos en El Salvador",
+    "items": ["Michelin", "Dunlop", "Falken", "Sumitomo", "Yokohama", "BFGoodrich"]
+  },
+  "sucursales": {
+    "titulo": "SIEMPRE UNA SUCURSAL CERCA",
+    "subtitulo": "18 sucursales en Santa Ana, San Salvador, La Libertad y San Miguel",
+    "cta": "Ver todas las sucursales"
+  },
+  "vipBanner": {
+    "titulo": "ÚNETE AL CLUB UNICLIENTE VIP",
+    "subtitulo": "Beneficios exclusivos, descuentos y asistencia premium en cada compra",
+    "cta": "Conocer beneficios"
+  },
+  "testimoniosSection": {
+    "titulo": "LO QUE DICEN NUESTROS CLIENTES",
+    "items": [
+      {
+        "nombre": "Carlos Méndez",
+        "vehiculo": "Toyota Hilux 2020",
+        "rating": 5,
+        "texto": "Llevo años comprando mis llantas aquí. Siempre tienen lo que busco y el servicio es rápido. Nunca me han fallado."
+      },
+      {
+        "nombre": "María Hernández",
+        "vehiculo": "Honda Civic 2018",
+        "rating": 5,
+        "texto": "Reservé el cambio de aceite y me atendieron exactamente a la hora. Cero esperas, súper profesional."
+      },
+      {
+        "nombre": "Roberto Castillo",
+        "vehiculo": "Ford Ranger 2021",
+        "rating": 5,
+        "texto": "El equipo de Pasatiempo es excelente. Me asesoraron bien y conseguí las BFGoodrich KO2 a buen precio."
+      }
+    ]
+  },
+  "footerCta": {
+    "titulo": "¿LISTO PARA RODAR?",
+    "subtitulo": "Cotizá tus llantas o reservá tu servicio en menos de un minuto",
+    "ctaPrimario": "Ver catálogo",
+    "ctaSecundario": "Hablar por WhatsApp"
+  }
+}

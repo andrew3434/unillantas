@@ -1,0 +1,401 @@
+[
+  {
+    "id": "michelin-ltx-force",
+    "marca": "Michelin",
+    "modelo": "LTX Force",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Todo terreno",
+    "descripcion": "Llanta de larga duración con máxima seguridad en carretera y tracción robusta fuera de carretera. Diseño todo terreno agresivo.",
+    "precio": 215.00,
+    "medidasDisponibles": ["265/70R16", "265/65R17", "275/65R18", "285/60R18"],
+    "specs": {
+      "duracion": "80,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "T",
+      "indiceCarga": "112"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 12, "merliot": 8, "santa-tecla": 5 },
+    "imagen": "/llantas/michelin-ltx-force.png"
+  },
+  {
+    "id": "michelin-pilot-sport-4-suv",
+    "marca": "Michelin",
+    "modelo": "Pilot Sport 4 SUV",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Alto rendimiento",
+    "descripcion": "Tecnología Dynamic Response para óptima respuesta al timón. Reactividad y precisión excepcionales.",
+    "precio": 289.00,
+    "medidasDisponibles": ["235/55R19", "255/50R19", "265/45R20", "275/45R20"],
+    "specs": {
+      "duracion": "60,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "Y",
+      "indiceCarga": "105"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 6, "escalon": 4, "merliot": 7 },
+    "imagen": "/llantas/michelin-pilot-sport-4.png"
+  },
+  {
+    "id": "michelin-primacy-4-suv",
+    "marca": "Michelin",
+    "modelo": "Primacy 4 SUV",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Touring",
+    "descripcion": "Llanta de turismo para SUV con excelente frenado en mojado y durabilidad. Tecnología EverGrip para seguridad continua.",
+    "precio": 195.00,
+    "medidasDisponibles": ["235/55R19", "255/50R19", "265/45R20", "275/45R20"],
+    "specs": {
+      "duracion": "70,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "V",
+      "indiceCarga": "105"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 10, "escalon": 6, "santa-tecla": 4 },
+    "imagen": "/llantas/michelin-primacy-4.png"
+  },    
+  {
+    "id": "michelin-latitude-sport-3",
+    "marca": "Michelin",
+    "modelo": "Latitude Sport 3",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Premium SUV",
+    "descripcion": "Llanta premium para camionetas y SUV con dibujo dinámico que ofrece excelente frenado en mojado y durabilidad.",
+    "precio": 245.00,
+    "medidasDisponibles": ["235/55R18", "255/55R18", "265/50R19", "275/45R20"],
+    "specs": {
+      "duracion": "65,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "V",
+      "indiceCarga": "100"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 3, "santa-elena": 5 },
+    "imagen": "/llantas/michelin-latitude-sport-3.png"
+  },
+  {
+    "id": "michelin-ltx-trail",
+    "marca": "Michelin",
+    "modelo": "LTX Trail",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Mixto",
+    "descripcion": "Diseñada para desempeño confiable dentro y fuera de carretera. Larga vida útil de la banda de rodamiento.",
+    "precio": 198.00,
+    "medidasDisponibles": ["245/70R16", "265/70R16", "265/65R17"],
+    "specs": {
+      "duracion": "75,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "T",
+      "indiceCarga": "112"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 9, "san-miguel": 6 },
+    "imagen": "/llantas/michelin-ltx-trail.png"
+  },
+  {
+    "id": "michelin-anakee-adventure",
+    "marca": "Michelin",
+    "modelo": "Anakee Adventure",
+    "tipo": "Moto altas prestaciones",
+    "uso": "Adventure",
+    "descripcion": "Mejora el manejo en curvas y estabilidad en línea recta. Agarre eficaz en carretera y camino.",
+    "precio": 165.00,
+    "medidasDisponibles": ["110/80R19", "150/70R17", "170/60R17"],
+    "specs": {
+      "duracion": "20,000 km",
+      "garantia": "3 años",
+      "indiceVelocidad": "V",
+      "indiceCarga": "75"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 4, "merliot": 2 },
+    "imagen": "/llantas/michelin-anakee-adventure.png"
+  },
+  {
+    "id": "falken-azenis-fk510",
+    "marca": "Falken",
+    "modelo": "Azenis FK510",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Alto rendimiento",
+    "descripcion": "Para conductores de vehículos deportivos premium. Excelente tracción y rendimiento con materiales híbridos.",
+    "precio": 175.00,
+    "medidasDisponibles": ["205/45R17", "215/45R17", "225/40R18", "245/40R19"],
+    "specs": {
+      "duracion": "55,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "Y",
+      "indiceCarga": "94"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 15, "escalon": 10, "santa-tecla": 8 },
+    "imagen": "/llantas/falken-azenis-fk510.png"
+  },
+  {
+    "id": "falken-ziex-ze310",
+    "marca": "Falken",
+    "modelo": "Ziex ZE310",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Touring",
+    "descripcion": "Excelente tracción y agarre en carreteras mojadas y secas con distancias de frenado mejoradas.",
+    "precio": 135.00,
+    "medidasDisponibles": ["195/65R15", "205/55R16", "215/55R17", "225/45R17"],
+    "specs": {
+      "duracion": "70,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "H",
+      "indiceCarga": "91"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 22, "merliot": 18, "santa-ana-centro": 12 },
+    "imagen": "/llantas/falken-ziex-ze310.png"
+  },
+  {
+    "id": "falken-wildpeak-at3w",
+    "marca": "Falken",
+    "modelo": "Wildpeak A/T3W",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Todo terreno",
+    "descripcion": "Llanta todoterreno robusta con excelente desempeño en clima frío y caminos difíciles.",
+    "precio": 195.00,
+    "medidasDisponibles": ["265/70R17", "275/65R18", "285/70R17", "285/55R20"],
+    "specs": {
+      "duracion": "85,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "T",
+      "indiceCarga": "115"
+    },
+    "destacada": false,
+    "stock": { "pasatiempo": 8, "san-miguel": 5 },
+    "imagen": "/llantas/falken-wildpeak.png"
+  },
+  {
+    "id": "dunlop-sp-sport-maxx",
+    "marca": "Dunlop",
+    "modelo": "SP Sport Maxx",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Alto rendimiento",
+    "descripcion": "Llanta premium con excelente maniobrabilidad a alta velocidad y conexión precisa con el asfalto.",
+    "precio": 185.00,
+    "medidasDisponibles": ["225/45R17", "235/45R18", "245/40R18", "255/40R19"],
+    "specs": {
+      "duracion": "50,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "Y",
+      "indiceCarga": "94"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 7, "escalon": 5 },
+    "imagen": "/llantas/dunlop-sp-sport-maxx.png"
+  },
+  {
+    "id": "dunlop-grandtrek-at3",
+    "marca": "Dunlop",
+    "modelo": "Grandtrek AT3",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Todo terreno",
+    "descripcion": "Alta tracción dentro y fuera de carretera con resistencia garantizada para terrenos difíciles.",
+    "precio": 175.00,
+    "medidasDisponibles": ["245/70R16", "265/70R16", "265/65R17"],
+    "specs": {
+      "duracion": "70,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "S",
+      "indiceCarga": "112"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 11, "santa-ana-centro": 8, "san-miguel": 6 },
+    "imagen": "/llantas/dunlop-grandtrek-at3.png"
+  },
+  {
+    "id": "dunlop-sp-touring",
+    "marca": "Dunlop",
+    "modelo": "SP Touring T1",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Touring",
+    "descripcion": "Diseñada para mejor rendimiento en carretera con contacto amplio que reduce el desgaste de la banda.",
+    "precio": 105.00,
+    "medidasDisponibles": ["175/65R14", "185/65R15", "195/65R15", "205/65R15"],
+    "specs": {
+      "duracion": "75,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "H",
+      "indiceCarga": "88"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 25, "merliot": 20, "santa-ana-centro": 15 },
+    "imagen": "/llantas/dunlop-sp-touring.png"
+  },
+  {
+    "id": "sumitomo-htr-z3",
+    "marca": "Sumitomo",
+    "modelo": "HTR Z III",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Ultra alto rendimiento",
+    "descripcion": "Rendimiento mejorado en condiciones húmedas con diseño agresivo de banda de rodadura y carbono súper abrasivo.",
+    "precio": 155.00,
+    "medidasDisponibles": ["205/50R17", "215/45R17", "225/45R18", "245/40R18"],
+    "specs": {
+      "duracion": "45,000 km",
+      "garantia": "4 años",
+      "indiceVelocidad": "Y",
+      "indiceCarga": "94"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 6, "escalon": 4 },
+    "imagen": "/llantas/sumitomo-htr-z3.png"
+  },
+  {
+    "id": "sumitomo-encounter-ht",
+    "marca": "Sumitomo",
+    "modelo": "Encounter HT",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Highway",
+    "descripcion": "Llanta para SUV y camionetas con conducción silenciosa y excelente durabilidad en carretera.",
+    "precio": 145.00,
+    "medidasDisponibles": ["235/70R16", "245/70R16", "265/70R17"],
+    "specs": {
+      "duracion": "80,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "T",
+      "indiceCarga": "108"
+    },
+    "destacada": false,
+    "stock": { "merliot": 9, "santa-ana-centro": 7 },
+    "imagen": "/llantas/sumitomo-encounter-ht.png"
+  },
+  {
+    "id": "yokohama-advan-sport",
+    "marca": "Yokohama",
+    "modelo": "Advan Sport V105",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Ultra alto rendimiento",
+    "descripcion": "Para vehículos de alto rendimiento, SUVs y eléctricos premium. Excepcional resistencia al hidroplaneo.",
+    "precio": 225.00,
+    "medidasDisponibles": ["225/45R18", "245/40R19", "265/35R19", "275/35R20"],
+    "specs": {
+      "duracion": "55,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "Y",
+      "indiceCarga": "100"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 5, "escalon": 3, "michelin-car-service": 4 },
+    "imagen": "/llantas/yokohama-advan-sport.png"
+  },
+  {
+    "id": "yokohama-geolandar-at",
+    "marca": "Yokohama",
+    "modelo": "Geolandar A/T G015",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Todo terreno",
+    "descripcion": "Llanta todoterreno con rendimiento superior en variedad de condiciones. Equilibrio perfecto entre durabilidad y confort.",
+    "precio": 185.00,
+    "medidasDisponibles": ["245/65R17", "265/70R17", "265/65R18", "275/65R18"],
+    "specs": {
+      "duracion": "80,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "T",
+      "indiceCarga": "115"
+    },
+    "destacada": false,
+    "stock": { "pasatiempo": 10, "san-miguel": 7, "santa-ana-centro": 9 },
+    "imagen": "/llantas/yokohama-geolandar-at.png"
+  },
+  {
+    "id": "yokohama-bluearth-gt",
+    "marca": "Yokohama",
+    "modelo": "BluEarth GT AE51",
+    "tipo": "Automóvil / Camioneta",
+    "uso": "Touring eco",
+    "descripcion": "Llanta ecológica con bajo consumo de combustible y diseño asimétrico TriBLEND para suave manejo.",
+    "precio": 142.00,
+    "medidasDisponibles": ["195/55R16", "205/55R16", "215/55R17", "225/50R17"],
+    "specs": {
+      "duracion": "70,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "V",
+      "indiceCarga": "91"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 14, "merliot": 11 },
+    "imagen": "/llantas/yokohama-bluearth-gt.png"
+  },
+  {
+    "id": "bfgoodrich-all-terrain-ko2",
+    "marca": "BFGoodrich",
+    "modelo": "All-Terrain T/A KO2",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Todo terreno extremo",
+    "descripcion": "La llanta todoterreno más reconocida del mundo. Máxima tracción y durabilidad en cualquier condición.",
+    "precio": 235.00,
+    "medidasDisponibles": ["265/70R17", "265/65R18", "285/70R17", "285/65R18"],
+    "specs": {
+      "duracion": "80,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "S",
+      "indiceCarga": "121"
+    },
+    "destacada": true,
+    "stock": { "los-heroes": 8, "pasatiempo": 6, "michelin-car-service": 5 },
+    "imagen": "/llantas/bfgoodrich-ko2.png"
+  },
+  {
+    "id": "bfgoodrich-mud-terrain-km3",
+    "marca": "BFGoodrich",
+    "modelo": "Mud-Terrain T/A KM3",
+    "tipo": "Pick Up / Camioneta",
+    "uso": "Off-road extremo",
+    "descripcion": "Construida para los terrenos más difíciles. Máxima tracción fuera de carretera en cualquier tipo de suelo.",
+    "precio": 285.00,
+    "medidasDisponibles": ["265/75R16", "285/75R16", "315/70R17", "33x12.50R17"],
+    "specs": {
+      "duracion": "60,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "Q",
+      "indiceCarga": "121"
+    },
+    "destacada": false,
+    "stock": { "pasatiempo": 4, "san-miguel": 3 },
+    "imagen": "/llantas/bfgoodrich-km3.png"
+  },
+  {
+    "id": "michelin-agilis-3",
+    "marca": "Michelin",
+    "modelo": "Agilis 3",
+    "tipo": "Vehículos Comerciales",
+    "uso": "Comercial",
+    "descripcion": "Para furgonetas y vehículos comerciales. Bajo consumo de combustible y frenado excepcional con tecnología EverGrip.",
+    "precio": 165.00,
+    "medidasDisponibles": ["195/75R16C", "205/75R16C", "215/75R16C", "225/75R16C"],
+    "specs": {
+      "duracion": "90,000 km",
+      "garantia": "6 años",
+      "indiceVelocidad": "R",
+      "indiceCarga": "110"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 18, "san-juan-opico": 12 },
+    "imagen": "/llantas/michelin-agilis-3.png"
+  },
+  {
+    "id": "yokohama-bluearth-van",
+    "marca": "Yokohama",
+    "modelo": "BluEarth Van RY55",
+    "tipo": "Vehículos Comerciales",
+    "uso": "Comercial",
+    "descripcion": "Gran estabilidad de manejo y buen drenaje de agua. Eficiencia en ahorro de combustible para flotas.",
+    "precio": 148.00,
+    "medidasDisponibles": ["185R14C", "195/75R16C", "205/75R16C"],
+    "specs": {
+      "duracion": "85,000 km",
+      "garantia": "5 años",
+      "indiceVelocidad": "R",
+      "indiceCarga": "104"
+    },
+    "destacada": false,
+    "stock": { "los-heroes": 16, "santa-ana-centro": 10 },
+    "imagen": "/llantas/yokohama-bluearth-van.png"
+  }
+]

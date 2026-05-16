@@ -1,0 +1,65 @@
+[
+  {
+    "id": "llantas",
+    "nombre": "Venta y Montaje de Llantas",
+    "descripcion": "Asesoría experta y montaje profesional de llantas de las mejores marcas del mundo",
+    "duracion": "30 min",
+    "precioDesde": 0,
+    "icon": "CircleDot",
+    "destacado": true
+  },
+  {
+    "id": "alineado",
+    "nombre": "Alineado y Balanceo",
+    "descripcion": "Mayor seguridad, estabilidad y vida útil para tus llantas",
+    "duracion": "45 min",
+    "precioDesde": 25,
+    "icon": "Crosshair",
+    "destacado": true
+  },
+  {
+    "id": "aceite",
+    "nombre": "Cambio de Aceite",
+    "descripcion": "Aceites premium y filtros originales para máximo rendimiento del motor",
+    "duracion": "30 min",
+    "precioDesde": 35,
+    "icon": "Droplet",
+    "destacado": true
+  },
+  {
+    "id": "ac",
+    "nombre": "Aire Acondicionado",
+    "descripcion": "Diagnóstico, recarga y reparación para máxima comodidad",
+    "duracion": "60 min",
+    "precioDesde": 45,
+    "icon": "Snowflake",
+    "destacado": false
+  },
+  {
+    "id": "motor",
+    "nombre": "Diagnóstico de Motor",
+    "descripcion": "Scanner profesional y reparación para que tu motor siempre funcione al 100%",
+    "duracion": "90 min",
+    "precioDesde": 50,
+    "icon": "Cog",
+    "destacado": false
+  },
+  {
+    "id": "frenos",
+    "nombre": "Frenos",
+    "descripcion": "Mantenimiento y reparación para máxima seguridad en cada viaje",
+    "duracion": "60 min",
+    "precioDesde": 40,
+    "icon": "Disc3",
+    "destacado": false
+  },
+  {
+    "id": "suspension",
+    "nombre": "Dirección y Suspensión",
+    "descripcion": "Sistema en perfecto estado para un manejo seguro y cómodo",
+    "duracion": "75 min",
+    "precioDesde": 55,
+    "icon": "MoveVertical",
+    "destacado": false
+  }
+]

@@ -1,0 +1,292 @@
+[
+  {
+    "id": "los-heroes",
+    "nombre": "Los Héroes",
+    "departamento": "San Salvador",
+    "direccion": "Blvd. Los Héroes entre 23 y 25 Calle Pte., San Salvador",
+    "telefono": "2555-4935",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.7089,
+    "lng": -89.2073,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor", "frenos"],
+    "esPrincipal": true
+  },
+  {
+    "id": "la-rabida",
+    "nombre": "La Rábida",
+    "departamento": "San Salvador",
+    "direccion": "35 Calle Ote. y 2a Av. Sur No. 1912, Col. La Rábida, San Salvador",
+    "telefono": "2235-4038",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.7008,
+    "lng": -89.1956,
+    "servicios": ["llantas", "alineado", "aceite", "frenos"]
+  },
+  {
+    "id": "san-antonio-abad",
+    "nombre": "San Antonio Abad",
+    "departamento": "San Salvador",
+    "direccion": "39 Av. Norte y Calle San Antonio Abad No. 59, San Salvador",
+    "telefono": "2566-8000",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.7156,
+    "lng": -89.2089,
+    "servicios": ["llantas", "alineado", "aceite", "ac"]
+  },
+  {
+    "id": "blvd-venezuela",
+    "nombre": "Bulevar Venezuela",
+    "departamento": "San Salvador",
+    "direccion": "Bulevar Venezuela, Col. Cucumacayán #1017, San Salvador",
+    "telefono": "2528-4820",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "9:00 a.m. - 4:00 p.m."
+    },
+    "lat": 13.6889,
+    "lng": -89.2244,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor", "frenos"]
+  },
+  {
+    "id": "escalon",
+    "nombre": "Escalón",
+    "departamento": "San Salvador",
+    "direccion": "Colonia Escalón, 11 Calle Poniente y 75 Av. Norte, Casa No. 3912, San Salvador",
+    "telefono": "2528-4845",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.7011,
+    "lng": -89.2389,
+    "servicios": ["llantas", "alineado", "aceite", "ac"]
+  },
+  {
+    "id": "miramonte",
+    "nombre": "Avenida Bernal",
+    "departamento": "San Salvador",
+    "direccion": "Av. Bernal, Res. Villas de Miramonte II, Senda 2, Casa #01, San Salvador",
+    "telefono": "2528-4830",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.7256,
+    "lng": -89.2178,
+    "servicios": ["llantas", "alineado", "aceite"]
+  },
+  {
+    "id": "merliot",
+    "nombre": "Ciudad Merliot",
+    "departamento": "La Libertad",
+    "direccion": "Ciudad Merliot, Calle Chiltiupán Pol. Q #17, Col. Jardines de Merliot",
+    "telefono": "2669-5920",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.6711,
+    "lng": -89.2667,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor", "frenos"]
+  },
+  {
+    "id": "michelin-car-service",
+    "nombre": "Michelin Car Service",
+    "departamento": "La Libertad",
+    "direccion": "Calle El Pedregal N. 20 PG A-6, Urbanización Jardines de la Hacienda",
+    "telefono": "2524-6150",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.6789,
+    "lng": -89.2811,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor", "frenos", "suspension"],
+    "especialidad": "Centro Michelin"
+  },
+  {
+    "id": "santa-elena",
+    "nombre": "Santa Elena",
+    "departamento": "La Libertad",
+    "direccion": "Blvd. Orden de Malta #10, Res. Santa Elena, Antiguo Cuscatlán",
+    "telefono": "2524-6155",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.6678,
+    "lng": -89.2533,
+    "servicios": ["llantas", "alineado", "aceite", "ac"]
+  },
+  {
+    "id": "pasatiempo",
+    "nombre": "Pasatiempo",
+    "departamento": "La Libertad",
+    "direccion": "Km. 25.5 Carretera hacia Santa Ana, Lourdes, La Libertad",
+    "telefono": "2508-6882",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:30 p.m.",
+      "sabado": "8:00 a.m. - 4:00 p.m.",
+      "domingo": "9:00 a.m. - 4:00 p.m."
+    },
+    "lat": 13.7322,
+    "lng": -89.3789,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor", "frenos"]
+  },
+  {
+    "id": "san-juan-opico",
+    "nombre": "San Juan Opico",
+    "departamento": "La Libertad",
+    "direccion": "Km 28½ Carretera a Sta Ana, San Juan Opico, junto a Pallets El Paso",
+    "telefono": "2528-4835",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.8244,
+    "lng": -89.3522,
+    "servicios": ["llantas", "alineado", "aceite"]
+  },
+  {
+    "id": "santa-tecla",
+    "nombre": "Santa Tecla",
+    "departamento": "La Libertad",
+    "direccion": "Salida a San Salvador, frente a estación de bomberos, Santa Tecla",
+    "telefono": "2524-6160",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.6756,
+    "lng": -89.2789,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "frenos"]
+  },
+  {
+    "id": "santa-ana-centro",
+    "nombre": "Santa Ana Centro",
+    "departamento": "Santa Ana",
+    "direccion": "Final diagonal David Granadino y 25 Av. Sur, Bo. San Rafael, Santa Ana",
+    "telefono": "2440-2150",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.9944,
+    "lng": -89.5594,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor"]
+  },
+  {
+    "id": "santa-ana-la25",
+    "nombre": "La 25 Santa Ana",
+    "departamento": "Santa Ana",
+    "direccion": "25 Calle Poniente entre 6 y 8 Av. Sur, Santa Ana",
+    "telefono": "2440-2155",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.9889,
+    "lng": -89.5567,
+    "servicios": ["llantas", "alineado", "aceite"]
+  },
+  {
+    "id": "los-pinos-santa-ana",
+    "nombre": "Los Pinos",
+    "departamento": "Santa Ana",
+    "direccion": "Intersección de 7 Av. Norte y 9 Calle Oriente, Santa Ana",
+    "telefono": "2440-2160",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 14.0011,
+    "lng": -89.5611,
+    "servicios": ["llantas", "alineado", "aceite", "ac"]
+  },
+  {
+    "id": "san-miguel",
+    "nombre": "San Miguel",
+    "departamento": "San Miguel",
+    "direccion": "Urbanización Barcelona, Pol. A Cas. 5, Calle Elizabeth, San Miguel Centro",
+    "telefono": "2528-4840",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.4833,
+    "lng": -88.1789,
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor", "frenos"]
+  },
+  {
+    "id": "san-miguel-2",
+    "nombre": "San Miguel Sucursal 18",
+    "departamento": "San Miguel",
+    "direccion": "Avenida Roosevelt Sur, San Miguel",
+    "telefono": "2528-4845",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.4856,
+    "lng": -88.1822,
+    "servicios": ["llantas", "alineado", "aceite"]
+  },
+  {
+    "id": "los-proceres",
+    "nombre": "Los Próceres",
+    "departamento": "San Salvador",
+    "direccion": "Blvd. Los Próceres y Av. Las Amapolas, Col. San Mateo",
+    "telefono": "2528-4850",
+    "email": "cotizaciones@unillantas.com.sv",
+    "horario": {
+      "lunes_viernes": "8:00 a.m. - 5:00 p.m.",
+      "sabado": "8:00 a.m. - 2:00 p.m.",
+      "domingo": "Cerrado"
+    },
+    "lat": 13.6822,
+    "lng": -89.2400,
+    "servicios": ["llantas", "alineado", "aceite", "ac"]
+  }
+]
