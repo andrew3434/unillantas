@@ -1,67 +1,66 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import Image from "next/image";
 import { HeroSearch } from "@/components/home/HeroSearch";
-
-const containerV: Variants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
-};
-
-const itemV: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-const linesSvg = encodeURIComponent(
-  "<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><line x1='0' y1='40' x2='40' y2='0' stroke='white' stroke-width='1'/></svg>",
-);
 
 export default function HeroSearchDevPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-surface-dark bg-[radial-gradient(circle_at_50%_30%,rgba(227,6,19,0.12),transparent_60%)]">
+    <main className="relative min-h-screen overflow-hidden bg-surface-dark">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-hilux.avif"
+          alt="Toyota Hilux en acción"
+          fill
+          priority
+          quality={90}
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-surface-dark/95 via-surface-dark/60 to-surface-dark/30" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-surface-dark via-surface-dark/80 to-transparent" />
+      </div>
+
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml;utf8,${linesSvg}")`,
-        }}
-      />
-
-      <motion.div
-        variants={containerV}
-        initial="hidden"
-        animate="visible"
-        className="relative mx-auto max-w-7xl px-6 py-12"
+        className="pointer-events-none absolute right-0 top-1/4 z-10 select-none text-[40rem] font-display italic leading-none text-white opacity-[0.04]"
+        style={{ transform: "translateX(20%)" }}
       >
-        <motion.div
-          variants={itemV}
-          className="mb-10 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-mono text-xs uppercase tracking-widest text-white"
-        >
-          <span>18 sucursales</span>
-          <span aria-hidden className="h-1 w-1 rounded-full bg-brand-red" />
-          <span>Desde 1990</span>
-          <span aria-hidden className="h-1 w-1 rounded-full bg-brand-red" />
-          <span>+35 años de confianza</span>
-        </motion.div>
+        U
+      </div>
 
-        <motion.div
-          variants={itemV}
-          className="mb-10 flex h-64 items-center justify-center rounded-2xl border-2 border-dashed border-white/10"
-        >
-          <span className="font-mono text-xs text-white">
-            [ HERO IMAGE — 2400×1200 — coming soon ]
+      <div
+        aria-hidden
+        className="pointer-events-none absolute right-0 top-0 z-10 h-full w-1/3 overflow-hidden"
+      >
+        <div className="absolute -right-20 top-0 h-[200%] w-32 rotate-12 bg-brand-red opacity-30" />
+        <div className="absolute -right-40 top-10 h-[200%] w-24 rotate-12 bg-brand-red opacity-20" />
+        <div className="absolute -right-60 top-20 h-[200%] w-16 rotate-12 bg-brand-red opacity-15" />
+      </div>
+
+      <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 py-20 sm:px-10 lg:px-16">
+        <span className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-brand-red/40 bg-brand-red/10 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-white backdrop-blur-sm">
+          <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
+          Los #1 en llantas de El Salvador
+        </span>
+
+        <h1 className="mb-6 max-w-3xl font-display italic leading-[0.85] tracking-tight text-white">
+          <span className="block text-[clamp(4rem,12vw,11rem)]">
+            ENCONTRÁ TU
           </span>
-        </motion.div>
+          <span className="block text-[clamp(4rem,12vw,11rem)] text-brand-red">
+            LLANTA
+          </span>
+        </h1>
 
-        <motion.div variants={itemV}>
+        <p className="mb-12 max-w-xl text-balance font-sans text-lg leading-relaxed text-white sm:text-xl">
+          Las mejores marcas, expertos en montaje, 18 sucursales en todo
+          El Salvador. Encontrá la llanta perfecta para tu vehículo en 3 clicks.
+        </p>
+
+        <div className="w-full max-w-2xl">
           <HeroSearch />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </main>
   );
 }
