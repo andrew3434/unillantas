@@ -44,10 +44,10 @@ export default function HeroSearchDevPage() {
         </span>
 
         <h1 className="mb-6 max-w-3xl font-display italic leading-[0.85] tracking-tight text-white">
-          <span className="block text-[clamp(4rem,12vw,11rem)]">
+          <span className="block text-[clamp(3rem,9vw,11rem)]">
             ENCONTRÁ TU
           </span>
-          <span className="block text-[clamp(4rem,12vw,11rem)] text-brand-red">
+          <span className="block text-[clamp(3rem,9vw,11rem)] text-brand-red">
             LLANTA
           </span>
         </h1>
@@ -57,7 +57,7 @@ export default function HeroSearchDevPage() {
           El Salvador. Encontrá la llanta perfecta para tu vehículo en 3 clicks.
         </p>
 
-        <div className="w-full max-w-2xl">
+        <div className="w-full max-w-2xl lg:max-w-md xl:max-w-lg 2xl:max-w-2xl">
           <HeroSearch />
         </div>
       </div>
