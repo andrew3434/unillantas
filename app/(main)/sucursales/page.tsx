@@ -2,9 +2,11 @@
 
 import { useMemo, useState } from "react";
 import dynamic from "next/dynamic";
-import { Building2, MapPin, Phone, Search, X } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Phone, Search, X } from "lucide-react";
 
 import sucursalesDataRaw from "@/data/sucursales.json";
+import { SucursalPlaceholder } from "@/components/sucursales/SucursalPlaceholder";
 
 type Sucursal = {
   id: string;
@@ -19,6 +21,7 @@ type Sucursal = {
   servicios: string[];
   esPrincipal?: boolean;
   especialidad?: string;
+  foto?: string;
 };
 
 const sucursalesData = sucursalesDataRaw as Sucursal[];
@@ -192,86 +195,91 @@ export default function SucursalesPage() {
                   <li key={sucursal.id}>
                     <article
                       className={[
-                        "rounded-xl border p-4 transition-all duration-200",
+                        "overflow-hidden rounded-xl border transition-all duration-200",
                         isSelected
                           ? "border-brand-red bg-brand-red/10"
                           : "border-surface-border bg-surface-card hover:-translate-y-0.5 hover:border-white/30 hover:shadow-lg hover:shadow-brand-red/10",
                       ].join(" ")}
                     >
-                      <div className="flex gap-4">
-                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-surface-border bg-surface-elevated">
-                          <Building2
-                            className="h-5 w-5 text-brand-red"
-                            strokeWidth={1.5}
-                            aria-hidden
-                          />
-                        </div>
-
-                        <div className="min-w-0 flex-1">
-                          <div className="mb-2 flex flex-wrap items-start justify-between gap-2">
-                            <div className="min-w-0">
-                              {sucursal.especialidad ? (
-                                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-brand-red">
-                                  {sucursal.especialidad}
-                                </div>
-                              ) : null}
-                              <h2 className="font-display text-xl leading-tight tracking-tight text-white">
-                                {sucursal.nombre}
-                              </h2>
-                            </div>
-
-                            <div className="flex shrink-0 flex-col items-end gap-1">
-                              {sucursal.esPrincipal ? (
-                                <span className="rounded-full bg-brand-red px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
-                                  Principal
-                                </span>
-                              ) : null}
-                              <span className="rounded-full border border-surface-border bg-surface-elevated px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
-                                {sucursal.departamento}
-                              </span>
-                            </div>
+                      <div className="relative">
+                        {sucursal.foto ? (
+                          <div className="relative aspect-[16/10] overflow-hidden">
+                            <Image
+                              src={sucursal.foto}
+                              alt={`Sucursal ${sucursal.nombre}`}
+                              fill
+                              sizes="(max-width: 1024px) 100vw, 40vw"
+                              className="object-cover"
+                            />
                           </div>
+                        ) : (
+                          <SucursalPlaceholder
+                            nombre={sucursal.nombre}
+                            departamento={sucursal.departamento}
+                          />
+                        )}
 
-                          <p className="mb-2 font-sans text-sm leading-snug text-white">
-                            {sucursal.direccion}
-                          </p>
+                        {(sucursal.esPrincipal || sucursal.especialidad) && (
+                          <div className="absolute left-3 top-3 flex flex-col gap-1">
+                            {sucursal.esPrincipal ? (
+                              <span className="rounded-full bg-brand-red px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white shadow-lg shadow-black/40">
+                                Principal
+                              </span>
+                            ) : null}
+                            {sucursal.especialidad ? (
+                              <span className="rounded-full bg-surface-dark/80 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-brand-red backdrop-blur-sm">
+                                {sucursal.especialidad}
+                              </span>
+                            ) : null}
+                          </div>
+                        )}
 
-                          <div className="mb-1 flex items-center gap-2 font-mono text-sm text-white">
+                        <span className="absolute right-3 top-3 rounded-full bg-surface-dark/80 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white backdrop-blur-sm">
+                          {sucursal.departamento}
+                        </span>
+                      </div>
+
+                      <div className="p-4">
+                        <h2 className="font-display text-xl leading-tight tracking-tight text-white">
+                          {sucursal.nombre}
+                        </h2>
+
+                        <p className="mt-2 font-sans text-sm leading-snug text-white">
+                          {sucursal.direccion}
+                        </p>
+
+                        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-xs text-white">
+                          <a
+                            href={`tel:+503${sucursal.telefono.replace(/\D/g, "")}`}
+                            className="inline-flex items-center gap-1.5 hover:text-brand-red"
+                          >
                             <Phone
                               className="h-3.5 w-3.5 text-brand-red"
                               strokeWidth={2}
                               aria-hidden
                             />
-                            <a
-                              href={`tel:+503${sucursal.telefono.replace(/\D/g, "")}`}
-                              className="hover:underline"
-                            >
-                              {sucursal.telefono}
-                            </a>
-                          </div>
+                            {sucursal.telefono}
+                          </a>
+                          <span>L-V {sucursal.horario.lunes_viernes}</span>
+                        </div>
 
-                          <div className="mb-3 font-mono text-xs text-white">
-                            L-V {sucursal.horario.lunes_viernes}
-                          </div>
-
-                          <div className="flex flex-wrap gap-2">
-                            <button
-                              type="button"
-                              onClick={() => handleVerEnMapa(sucursal.id)}
-                              className="inline-flex items-center gap-1.5 rounded-full border border-surface-border bg-surface-card px-3 py-1.5 font-mono text-xs uppercase tracking-wider text-white transition-all hover:border-white/30 hover:bg-surface-elevated"
-                            >
-                              <MapPin className="h-3.5 w-3.5" aria-hidden />
-                              Ver en mapa
-                            </button>
-                            <a
-                              href={`https://www.google.com/maps/dir/?api=1&destination=${sucursal.lat},${sucursal.lng}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 rounded-full border border-surface-border bg-surface-card px-3 py-1.5 font-mono text-xs uppercase tracking-wider text-white transition-all hover:border-white/30 hover:bg-surface-elevated"
-                            >
-                              Cómo llegar
-                            </a>
-                          </div>
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          <button
+                            type="button"
+                            onClick={() => handleVerEnMapa(sucursal.id)}
+                            className="inline-flex items-center gap-1.5 rounded-full bg-brand-red px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-white shadow-lg shadow-brand-red/30 transition-all hover:bg-brand-red-dark"
+                          >
+                            <MapPin className="h-3.5 w-3.5" aria-hidden />
+                            Ver en mapa
+                          </button>
+                          <a
+                            href={`https://www.google.com/maps/dir/?api=1&destination=${sucursal.lat},${sucursal.lng}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 rounded-full border border-surface-border bg-surface-card px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-white transition-all hover:border-white/30 hover:bg-surface-elevated"
+                          >
+                            Cómo llegar
+                          </a>
                         </div>
                       </div>
                     </article>

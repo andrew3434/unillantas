@@ -67,9 +67,9 @@ export function PorQueUnillantas() {
               delay={idx * 0.08}
               className="group flex flex-col items-start rounded-2xl border border-surface-border bg-surface-card p-6 transition-all duration-200 hover:-translate-y-1 hover:border-brand-red/60 hover:shadow-lg hover:shadow-brand-red/10 sm:p-8"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-red/40 bg-brand-red/10 transition-colors group-hover:bg-brand-red/20">
+              <span className="flex h-16 w-16 items-center justify-center rounded-full border border-brand-red/40 bg-brand-red/10 transition-colors group-hover:bg-brand-red/20">
                 <Icon
-                  className="h-7 w-7 text-brand-red"
+                  className="h-8 w-8 text-brand-red"
                   strokeWidth={1.5}
                   aria-hidden
                 />

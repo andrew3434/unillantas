@@ -207,7 +207,8 @@
     },
     "lat": 13.9944,
     "lng": -89.5594,
-    "servicios": ["llantas", "alineado", "aceite", "ac", "motor"]
+    "servicios": ["llantas", "alineado", "aceite", "ac", "motor"],
+    "foto": "/sucursal-bypass.jpg"
   },
   {
     "id": "santa-ana-la25",
@@ -223,7 +224,8 @@
     },
     "lat": 13.9889,
     "lng": -89.5567,
-    "servicios": ["llantas", "alineado", "aceite"]
+    "servicios": ["llantas", "alineado", "aceite"],
+    "foto": "/sucursal-la-aldea.jpg"
   },
   {
     "id": "los-pinos-santa-ana",
@@ -239,7 +241,8 @@
     },
     "lat": 14.0011,
     "lng": -89.5611,
-    "servicios": ["llantas", "alineado", "aceite", "ac"]
+    "servicios": ["llantas", "alineado", "aceite", "ac"],
+    "foto": "/sucursal-la-3.jpg"
   },
   {
     "id": "san-miguel",

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { whatsappUrlWithMessage } from "@/lib/constants";
 import { MotionInView } from "./MotionInView";
 
-const WHATSAPP_URL =
-  "https://wa.me/50322250000?text=" +
-  encodeURIComponent("Hola, quisiera cotizar llantas para mi vehículo.");
+const CTA_WHATSAPP = whatsappUrlWithMessage(
+  "Hola, quisiera cotizar llantas para mi vehículo.",
+);
 
 export function CTAFinal() {
   return (
@@ -72,7 +73,7 @@ export function CTAFinal() {
           </Link>
 
           <a
-            href={WHATSAPP_URL}
+            href={CTA_WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-display text-lg uppercase tracking-wider text-white shadow-lg shadow-black/30 transition-all hover:bg-whatsapp/90 active:scale-[0.98]"

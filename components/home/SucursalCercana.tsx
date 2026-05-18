@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import {
   ArrowRight,
-  Building2,
   Clock,
   MapPin,
   Navigation,
@@ -34,7 +34,13 @@ interface Sucursal {
 }
 
 const sucursales = sucursalesData as Sucursal[];
-const featured = sucursales.find((s) => s.esPrincipal) ?? sucursales[0];
+// Featured: tomamos la primera de Santa Ana como "ByPass" (la sucursal exacta
+// ByPass no está en el JSON; usamos santa-ana-centro como proxy + foto real).
+const featured =
+  sucursales.find((s) => s.id === "santa-ana-centro") ??
+  sucursales.find((s) => s.departamento === "Santa Ana") ??
+  sucursales[0];
+const featuredFoto = "/sucursal-bypass.jpg";
 
 const markers: MiniSucursalMarker[] = sucursales.map((s) => ({
   id: s.id,
@@ -77,17 +83,21 @@ export function SucursalCercana() {
         <div className="grid gap-6 lg:grid-cols-12 lg:gap-8">
           <MotionInView className="lg:col-span-5">
             <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-surface-border bg-surface-card">
-              <div className="relative flex h-48 items-center justify-center bg-gradient-to-br from-surface-elevated to-surface-card">
-                <Building2
-                  className="h-16 w-16 text-brand-red"
-                  strokeWidth={1.25}
-                  aria-hidden
+              <div className="relative h-64 overflow-hidden border-b border-brand-red/30">
+                <Image
+                  src={featuredFoto}
+                  alt={`Sucursal ${featured.nombre}`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover"
                 />
-                {featured.esPrincipal && (
-                  <span className="absolute right-3 top-3 rounded-full bg-brand-red px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white">
-                    Sucursal principal
-                  </span>
-                )}
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/20 to-transparent"
+                />
+                <span className="absolute right-3 top-3 rounded-full bg-brand-red px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white shadow-lg shadow-black/40">
+                  Tu sucursal en Santa Ana
+                </span>
               </div>
 
               <div className="flex flex-1 flex-col p-6 sm:p-8">

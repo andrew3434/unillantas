@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MapPin, Phone, MessageCircle, Package, ArrowRight } from "lucide-react";
+import { WHATSAPP_URL } from "@/lib/constants";
 
 interface Sucursal {
   id: string;
@@ -72,7 +73,7 @@ export function ProductoStock({ stock, sucursales }: ProductoStockProps) {
             </p>
           </div>
           <a
-            href="https://wa.me/50322250000"
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full border border-whatsapp bg-whatsapp/15 px-6 py-3 font-display text-base uppercase tracking-wider text-whatsapp transition-all hover:bg-whatsapp/25"

@@ -53,8 +53,10 @@ export function HeroHome() {
         </h1>
 
         <p className="mb-12 max-w-xl text-balance font-sans text-lg leading-relaxed text-white sm:text-xl">
-          Las mejores marcas, expertos en montaje, 18 sucursales en todo
-          El Salvador. Encontrá la llanta perfecta para tu vehículo en 3 clicks.
+          Las mejores marcas. 18 sucursales en todo El Salvador.
+          <br />
+          Encontrá tu llanta perfecta en{" "}
+          <span className="font-display italic text-brand-red">3 clicks</span>.
         </p>
 
         <div className="w-full max-w-2xl lg:max-w-md xl:max-w-lg 2xl:max-w-2xl">

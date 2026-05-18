@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { whatsappUrlWithMessage } from "@/lib/constants";
 
 interface ProductoInteractiveProps {
   productoId: string;
@@ -33,7 +34,7 @@ export function ProductoInteractive({
     const texto = `Hola, quiero cotizar ${marca} ${modelo}${
       medidaSeleccionada ? ` en medida ${medidaSeleccionada}` : ""
     } (USD $${precio}).`;
-    return `https://wa.me/50322250000?text=${encodeURIComponent(texto)}`;
+    return whatsappUrlWithMessage(texto);
   }, [marca, modelo, medidaSeleccionada, precio]);
 
   const enabled = medidaSeleccionada.length > 0;
