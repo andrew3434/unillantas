@@ -73,7 +73,13 @@ export function StepSucursal() {
   const servicioId = useReservaStore((s) => s.servicioId);
   const sucursalId = useReservaStore((s) => s.sucursalId);
   const setSucursal = useReservaStore((s) => s.setSucursal);
+  const setPaso = useReservaStore((s) => s.setPaso);
   const productoId = useReservaStore((s) => s.productoId);
+
+  const handleSelectSucursal = (id: string) => {
+    setSucursal(id);
+    setTimeout(() => setPaso(3), 250);
+  };
 
   const [departamento, setDepartamento] =
     useState<(typeof DEPARTAMENTOS)[number]>("Todas");
@@ -150,7 +156,7 @@ export function StepSucursal() {
           <MapaReservar
             sucursales={markers}
             selectedId={sucursalId}
-            onSelect={setSucursal}
+            onSelect={handleSelectSucursal}
           />
         </div>
 
@@ -169,7 +175,7 @@ export function StepSucursal() {
                 <li key={sucursal.id}>
                   <button
                     type="button"
-                    onClick={() => setSucursal(sucursal.id)}
+                    onClick={() => handleSelectSucursal(sucursal.id)}
                     aria-pressed={isSelected}
                     className={[
                       "block w-full rounded-xl border p-4 text-left transition-all duration-200",
