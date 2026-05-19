@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BannerReservas } from "@/components/home/BannerReservas";
+import { BannerCatalogo } from "@/components/home/BannerCatalogo";
 import { CTAFinal } from "@/components/home/CTAFinal";
 import { HeroHome } from "@/components/home/HeroHome";
 import { LlantasDestacadas } from "@/components/home/LlantasDestacadas";
@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <HeroHome />
       <ServiciosHome />
-      <BannerReservas />
+      <BannerCatalogo />
       <LlantasDestacadas />
       <SucursalCercana />
       <PorQueUnillantas />

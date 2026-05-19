@@ -1,20 +1,20 @@
 import Link from "next/link";
-import { ArrowRight, Calendar, Check } from "lucide-react";
+import { ArrowRight, Check, Disc3 } from "lucide-react";
 import { MotionInView } from "./MotionInView";
 
 const beneficios = [
-  "Sin colas, sin esperas en sucursal",
-  "Confirmación inmediata por WhatsApp",
-  "Reprogramá o cancelá con un click",
+  "6 marcas oficiales: Michelin, Falken, Dunlop, Yokohama, Sumitomo, BFGoodrich",
+  "Filtros por medida, marca y precio",
+  "Stock en tiempo real por sucursal",
 ];
 
-const fakeBookings = [
-  { hora: "08:30", servicio: "Cambio de aceite" },
-  { hora: "10:00", servicio: "Alineado y balanceo" },
-  { hora: "14:00", servicio: "Cambio de llantas" },
+const preview = [
+  { marca: "Falken", modelo: "Azenis FK510", precio: 175 },
+  { marca: "Michelin", modelo: "LTX Force", precio: 215 },
+  { marca: "BFGoodrich", modelo: "All-Terrain KO2", precio: 235 },
 ];
 
-export function BannerReservas() {
+export function BannerCatalogo() {
   return (
     <section className="relative overflow-hidden bg-brand-red">
       <div
@@ -35,15 +35,13 @@ export function BannerReservas() {
         <MotionInView>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/15 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-white backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />
-            Reservas online
+            Catálogo completo
           </span>
 
           <h2 className="mt-5 font-display italic leading-[0.9] tracking-tight text-white">
-            <span className="block text-5xl sm:text-6xl">
-              RESERVÁ TU CITA EN
-            </span>
+            <span className="block text-5xl sm:text-6xl">EXPLORÁ EL</span>
             <span className="mt-2 inline-block bg-surface-dark px-4 py-1 text-6xl text-white sm:text-7xl">
-              3 MINUTOS
+              CATÁLOGO
             </span>
           </h2>
 
@@ -66,10 +64,10 @@ export function BannerReservas() {
           </ul>
 
           <Link
-            href="/reservar"
+            href="/catalogo"
             className="group mt-10 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-display text-lg uppercase tracking-wider text-brand-red shadow-2xl shadow-black/20 transition-all hover:bg-white/90 active:scale-[0.98]"
           >
-            Agendar ahora
+            Ver catálogo
             <ArrowRight
               className="h-5 w-5 transition-transform group-hover:translate-x-1"
               aria-hidden
@@ -81,41 +79,43 @@ export function BannerReservas() {
           <div className="relative w-full max-w-md rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-sm">
             <div className="flex items-center justify-between border-b border-white/20 pb-4">
               <span className="font-mono text-xs uppercase tracking-widest text-white">
-                Agenda de hoy
+                Top vendidas
               </span>
-              <Calendar className="h-6 w-6 text-white" aria-hidden />
+              <Disc3 className="h-6 w-6 text-white" aria-hidden />
             </div>
 
             <ul className="mt-6 space-y-4">
-              {fakeBookings.map((b) => (
+              {preview.map((p) => (
                 <li
-                  key={b.hora}
+                  key={`${p.marca}-${p.modelo}`}
                   className="flex items-center gap-4 rounded-xl bg-white/10 p-4 backdrop-blur-sm"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white">
-                    <Check
+                  <span
+                    aria-hidden
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white"
+                  >
+                    <Disc3
                       className="h-5 w-5 text-brand-red"
-                      strokeWidth={3}
-                      aria-hidden
+                      strokeWidth={1.5}
                     />
                   </span>
                   <div className="flex flex-1 flex-col">
-                    <span className="font-mono text-sm text-white">
-                      {b.hora}
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-white">
+                      {p.marca}
                     </span>
                     <span className="font-display text-lg leading-tight tracking-tight text-white">
-                      {b.servicio.toUpperCase()}
+                      {p.modelo.toUpperCase()}
                     </span>
                   </div>
-                  <span className="rounded-full bg-surface-dark px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-white">
-                    Confirmada
+                  <span className="rounded-full bg-surface-dark px-3 py-1 font-mono text-xs text-white">
+                    ${p.precio}
                   </span>
                 </li>
               ))}
             </ul>
 
             <div className="mt-6 border-t border-white/20 pt-4 text-center font-mono text-xs uppercase tracking-widest text-white">
-              + 312 reservas esta semana
+              + 18 llantas más en stock
             </div>
           </div>
         </MotionInView>
