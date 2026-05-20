@@ -22,10 +22,22 @@
   body {
     background-color: rgb(var(--background));
     color: rgb(var(--foreground));
-    font-family: var(--font-inter), system-ui, sans-serif;
+    font-family: var(--font-montserrat), system-ui, sans-serif;
+    font-weight: 500;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  /* Montserrat necesita peso y tracking distintos según rol */
+  .font-display {
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono {
+    font-weight: 600;
+    letter-spacing: 0.04em;
   }
 
   ::selection {

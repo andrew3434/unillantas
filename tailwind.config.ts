@@ -24,9 +24,9 @@ const config: Config = {
         whatsapp: "#25D366",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-bebas)", "Impact", "sans-serif"],
-        mono: ["var(--font-jetbrains)", "ui-monospace", "monospace"],
+        sans: ["var(--font-montserrat)", "system-ui", "sans-serif"],
+        display: ["var(--font-montserrat)", "Impact", "sans-serif"],
+        mono: ["var(--font-montserrat)", "ui-monospace", "monospace"],
       },
       letterSpacing: {
         display: "0.02em",

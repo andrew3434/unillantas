@@ -10,9 +10,9 @@ const destacadas = productos.filter((p) => p.destacada).slice(0, 4);
 
 export function LlantasDestacadas() {
   return (
-    <section className="relative bg-surface-dark py-20 sm:py-28">
+    <section className="relative bg-surface-dark py-14 sm:py-20">
       <div className="mx-auto max-w-7xl px-6">
-        <MotionInView className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
+        <MotionInView className="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
           <span className="inline-flex items-center gap-2 rounded-full border border-brand-red/40 bg-brand-red/10 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-white">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-red" />
             Productos destacados

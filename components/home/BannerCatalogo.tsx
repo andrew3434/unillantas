@@ -31,7 +31,7 @@ export function BannerCatalogo() {
         className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-white/10 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-2 lg:gap-16 lg:py-24">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-6 py-14 lg:grid-cols-2 lg:gap-14 lg:py-16">
         <MotionInView>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/15 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-white backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />

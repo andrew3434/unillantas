@@ -34,7 +34,7 @@ export function CTAFinal() {
         }}
       />
 
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 py-24 text-center sm:py-32">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 py-16 text-center sm:py-24">
         <MotionInView>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-white backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />

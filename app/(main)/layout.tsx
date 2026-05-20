@@ -1,25 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue, JetBrains_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "../globals.css";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const bebas = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-bebas",
-  display: "swap",
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
+  variable: "--font-montserrat",
   display: "swap",
 });
 
@@ -98,10 +85,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="es"
-      className={`${inter.variable} ${bebas.variable} ${jetbrains.variable}`}
-    >
+    <html lang="es" className={montserrat.variable}>
       <body className="min-h-screen bg-surface-dark text-white antialiased">
         <Header />
         <main>{children}</main>
